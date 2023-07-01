@@ -1,0 +1,54 @@
+:root,
+.nextui-t-bzCiFt {
+	--nextui-fonts-sans: "Poppins", sans-serif;
+	--nextui-colors-red: #ff3333;
+	--nextui-colors-yellow: #ffcc33;
+	--nextui-colors-blue: #2461ff;
+	--nextui-colors-green: #35d55e;
+	--nextui-colors-dark: #111111;
+	--nextui-colors-eerie: #1e1e1e;
+	--nextui-colors-black: #000000;
+	--nextui-colors-white: #ffffff;
+}
+
+.dropdownItemDescription {
+	display: block;
+	color: #7d8186;
+	font-size: 0.8rem;
+	line-height: 0.9rem;
+	margin: 6px 0px 0px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.01rem;
+	text-transform: none;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	width: 100%;
+}
+
+.collapseMenu::-webkit-scrollbar {
+	display: none;
+}
+.collapseMenu {
+	overflow: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+@media (max-width: 991px) {
+	.collapseMenu
+		.collapseMenuHeader
+		.collapseMenuHeaderTitle
+		.collapseMenuHeaderTitleText
+		.collapseMenuHeaderTitleTextSpan
+		.collapseMenuHeaderTitleTextSpanIcon {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		width: auto;
+		height: auto;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0.5rem 0px 0px;
+	}
+}

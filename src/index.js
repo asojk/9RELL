@@ -1,17 +1,36 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import About from "./views/about";
+import DuroLast from "./views/duro-last";
+import Glossary from "./views/glossary";
+import Home from "./views/home";
+import Maintenance from "./views/maintenance";
+import NewRoof from "./views/new-roof";
+import Projects from "./views/projects";
+import Repair from "./views/repair";
+import Replacement from "./views/replacement";
+import Warranty from "./views/warranty";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => {
+  return (
+    <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/duro-last" element={<DuroLast />} />
+      <Route path="/glossary" element={<Glossary />} />
+      <Route path="/new-roof" element={<NewRoof />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/repair" element={<Repair />} />
+      <Route path="/replacement" element={<Replacement />} />
+      <Route path="/warranty" element={<Warranty />} />
+      <Route path="/maintenance" element={<Maintenance />} />
+    </Routes>
+  </Router>
+  );
+  };
+
+ReactDOM.render(<App />, document.getElementById("app"));

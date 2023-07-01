@@ -1,0 +1,128 @@
+.reputation-container {
+	background-color: #000000;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: fit-content;
+}
+
+.testimonials-testimonials {
+	gap: 2rem;
+	flex: 1;
+	display: flex;
+	position: relative;
+	align-items: center;
+	padding-top: 4rem;
+	border-color: #51515a;
+	flex-direction: column;
+	padding-bottom: 4rem;
+	justify-content: center;
+	max-width: fit-content;
+}
+.testimonials-header {
+	gap: 2rem;
+	width: 100%;
+	display: flex;
+	max-width: 1200px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.testimonials-left {
+	gap: 1rem;
+	width: 100%;
+	display: flex;
+	max-width: 600px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.testimonials-heading {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+.testimonials-right {
+	gap: 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.testimonials-paragraph {
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+}
+.testimonials-cards {
+	width: 90%;
+	display: grid;
+	grid-gap: 1.5rem;
+	max-width: 1200px;
+	align-items: flex-start;
+	flex-direction: row;
+	grid-template-columns: auto auto auto;
+}
+.testimonials-container {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.testimonials-container1 {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.testimonials-container2 {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.testimonials-view-more {
+	gap: var(--dl-space-space-oneandhalfunits);
+	cursor: pointer;
+	display: none;
+	transition: 0.3s;
+	align-items: center;
+	border-color: #80ff44;
+	flex-direction: column;
+	padding-bottom: 0.5rem;
+	justify-content: center;
+	border-bottom-width: 1px;
+}
+.testimonials-view-more:hover {
+	opacity: 0.5;
+}
+.testimonials-text {
+	color: rgb(128, 255, 68);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+@media (max-width: 991px) {
+	.testimonials-testimonials {
+		gap: 1.5rem;
+	}
+	.testimonials-cards {
+		grid-template-columns: auto;
+	}
+	.testimonials-container2 {
+		display: none;
+	}
+	.testimonials-view-more {
+		display: flex;
+		border-color: #cccccc;
+	}
+	.testimonials-text {
+		color: #cccccc;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 24px;
+	}
+}
+@media (max-width: 767px) {
+	.testimonials-testimonials {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
