@@ -1,5 +1,4 @@
 import React from "react";
-import "./partners.css";
 
 const Partners = () => {
 	return (
@@ -14,105 +13,105 @@ const Partners = () => {
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/blank-partner.png"
+						src="/assets/partners/blank-partner.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/blank-partner.png"
+						src="/assets/partners/blank-partner.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/blank-partner.png"
+						src="/assets/partners/blank-partner.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/blank-partner.png"
+						src="/assets/partners/blank-partner.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/blank-partner.png"
+						src="/assets/partners/blank-partner.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/blank-partner.png"
+						src="/assets/partners/blank-partner.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/bahama-breeze.png"
+						src="/assets/partners/bahama-breeze.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/chick-fil-a.png"
+						src="/assets/partners/chick-fil-a.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/chilis.png"
+						src="/assets/partners/chilis.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/eddie-vs.png"
+						src="/assets/partners/eddie-vs.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/olive-garden.png"
+						src="/assets/partners/olive-garden.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/red-lobster.png"
+						src="/assets/partners/red-lobster.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/texas-roadhouse.png"
+						src="/assets/partners/texas-roadhouse.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/the-capital-grill.png"
+						src="/assets/partners/the-capital-grill.webp"
 						alt="Partner"
 					/>
 				</div>
 				<div className="partners-card">
 					<img
 						className="partners-image"
-						src="/assets/partners/usps.png"
+						src="/assets/partners/usps.webp"
 						alt="Partner"
 					/>
 				</div>

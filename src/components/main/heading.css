@@ -1,0 +1,146 @@
+.anim-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-left: 10vw;
+}
+
+.anim-1 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 30vw;
+    height: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .1-span {
+    font-size: 3rem;
+  }
+  
+  .message {
+    background-color: #ff3333;
+    color: #fff;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 2rem;
+    top: .2rem;
+    left: 4rem;
+    animation: openclose 10s ease-in-out infinite;
+  }
+
+  .anim-2 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 30vw;
+    height: 4rem;
+  }
+  
+  .2-span {
+    font-size: 3rem;
+    margin-left: .25rem;
+  }
+  
+  .word1, .word2, .word3, .word4, .word5 {
+    font-family: "Poppins", sans-serif;
+    margin-left: 1rem;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .anim-1 { font-size: 2rem; height: 3rem;
+    }
+    .message {
+      margin-left: .5rem;
+      top: .05rem;
+      left: 3rem;
+      font-weight: 700;
+    }
+    .anim-2 { font-size: 2rem; height: 3rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .anim-1, .anim-2 { display: none;
+    }
+  }

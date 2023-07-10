@@ -1,19 +1,13 @@
 import React from "react";
-
 import PropTypes from "prop-types";
-
 import Card from "./card.js";
-import "./cards.css";
 
 const Cards = (props) => {
 	return (
 		<section className="cards-cards">
-			<header className="cards-header">
-				<header className="cards-left">
-					<h2 className="section-heading">
-						<span>Meet our team</span>
-					</h2>
-				</header>
+			<header className="header">
+				<h2 className="heading"
+				style={{ paddingTop: "2rem" }}>Meet our Team</h2>
 			</header>
 			<main className="cards-cards1">
 				<Card rootClassName="card-root-class-name"></Card>

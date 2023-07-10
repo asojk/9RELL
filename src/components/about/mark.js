@@ -1,8 +1,5 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
-
-import './mark.css'
 
 const Mark = (props) => {
   return (

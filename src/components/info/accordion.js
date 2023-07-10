@@ -1,8 +1,5 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
-
-import './accordion.css'
 
 const Accordion = (props) => {
   return (

@@ -1,8 +1,5 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
-
-import './her.css'
 
 const Her = (props) => {
   return (
@@ -64,9 +61,9 @@ const Her = (props) => {
 }
 
 Her.defaultProps = {
-  image_src: '/SectionImages/herimage-1500h.png',
+  image_src: 'assets/grell/Tagged.png',
   image_alt: 'image',
-  image_src1: '/SectionImages/herimage-1500h.png',
+  image_src1: 'assets/grell/Tagged.png',
   image_alt1: 'image',
   Caption: 'Loved by 10,000+ people like you.',
   Heading: 'The fastest way to make a doctor appointment',

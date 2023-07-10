@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import "./faq.css"
-
 const FAQ = (props) => {
     return (
       <div className={`faq-accordion ${props.rootClassName} `}>

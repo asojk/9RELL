@@ -1,9 +1,6 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
-
 import Accordion from './accordion.js'
-import './accordian.css'
 
 const Accordian = (props) => {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import "./expertise.css";
 import { Link } from "react-router-dom";
 
 import Hotels from "../SVGs/hotels.js";
@@ -41,10 +40,12 @@ const Expertise = () => {
 	return (
 		<>
 			<div className="exp">
-				<span className="subhead">Expertise</span>
-				<h2 className="head">
-					<span>We work across a variety of industries</span>
+				<header className="header">
+				<span className="head">Expertise</span>
+				<h2 className="heading">
+				We work across a variety of industries
 				</h2>
+				</header>
 				<div className="exp-container1">
 					<main className="exp-cards">
 						<div className="med">
