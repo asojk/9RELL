@@ -2,6 +2,7 @@
 
 .home-main {
   z-index: 99;
+  padding-top: 25vh;
 }
 .main-description {
   margin: 1rem;
@@ -12,7 +13,6 @@
   -webkit-backdrop-filter: blur(10px);
   color: #fff;
   font-weight: 500;
-
 }
 
 .comic-button {
@@ -58,7 +58,7 @@
   margin-left: 10vw;
   cursor: pointer;
   display: inline-flex;
-  margin-top: 6vh;
+  margin-top: 2rem;
 }
 .phone {
   fill: #fff;
@@ -90,9 +90,7 @@
   box-shadow: none;
   transform: translateY(4px);
 }
-.home {
-  padding: 2rem;
-}
+
 .header {
   gap: 1rem;
 	width: 100%;
@@ -399,9 +397,9 @@
   flex-direction: column;
   justify-content: flex-end;
   justify-items: flex-end;
-  padding-top: 8vh;
+
   padding-left: 10vw;
-  margin-bottom: 8vh;
+
 }
 
 .bbb {
@@ -1229,6 +1227,7 @@
 }
 
 .info-comp-container {
+  z-index: 999;
   align-items: center;
   background-color: #000;
   display: flex;
@@ -1540,6 +1539,8 @@
 
 .section-container {
   align-items: center;
+  height: 100vh;
+  justify-content: center;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -1707,7 +1708,9 @@
 }
 
 @media (max-width: 991px) {
-
+  .home-main {
+    padding-top: 20vh;
+  }
   .home-container {
     display: flex;
     flex-direction: column;
@@ -1861,11 +1864,20 @@
 }
 
 @media (max-width: 767px) {
+  .home-main {
+    padding-top: 10vh;
+  }
+  .main-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
   .home-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
   .bbb {
     max-width: 6rem
@@ -1939,11 +1951,21 @@
 }
 
 @media (max-width: 991px) {
+  .home-main {
+    padding-top: 20vh;
+  }
+  .main-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
   .home-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 12rem;
+    padding-top: 6rem;
   }
   .accordian-accordian {
     padding-top: 0;
@@ -2072,6 +2094,16 @@
 }
 
 @media (max-width: 479px) {
+  .home-main {
+    padding-top: 15vh;
+  }
+  .main-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
   .home-container {
     padding-top: 4rem;
   }

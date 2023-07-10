@@ -2,7 +2,7 @@ import React from 'react'
 
 const CTA = () => {
   return (
-    <><a className="comic-button2" href="tel:+18002089693">
+    <a className="comic-button2" href="tel:+18002089693">
     <svg 
       className="phone" 
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,6 @@ const CTA = () => {
     </svg>
         <span>Free Estimate</span>
     </a>
-    <p className="main-description">Grell exists to provide top-notch quality commercial roofing services, while delivering exceptional customer satisfaction. The company holds core values in honesty, reliability, and expertise.</p></>
   )
 }
 

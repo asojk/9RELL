@@ -6,10 +6,6 @@
 --swiper-navigation-color: #fff;
 }
 
-.swiper-container {
-  padding-top: 25vh;
-}
-
 .swiper {
 	width: 35vw;
 	height: calc((var(--w)) * 1.3);
@@ -101,11 +97,11 @@
 }
 @media (max-width: 767px) {
   .swiper {
-    width: 50vw;
+    width: 70vw;
     height: 30vh;
   }
   .slide-text {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-top: 2vh;
   }
   .swiper-container {
@@ -117,7 +113,7 @@
 }
 @media (max-width: 479px) {
   .slide-text {
-    font-size: 1.5rem;
-    padding-top: 1vh;
+    font-size: 2rem;
+    padding-top: 2vh;
   }
 }
