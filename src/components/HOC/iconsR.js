@@ -8,6 +8,32 @@ import { CgProfile } from "react-icons/cg";
 import { FaQuestionCircle } from "react-icons/fa";
 import { BsShieldCheck } from "react-icons/bs";
 import { BsBuildingGear } from "react-icons/bs";
+import { IconlyProvider, Category } from "react-iconly";
+import { CgMenuRound } from "react-icons/cg";
+
+const CgMenuRoundI = () => {
+	return (
+		<IconContext.Provider
+			value={{ color: "#fff", className: "iconR", size: "45", cursor: "pointer", margin: "0 0 0 10px",  }}
+		>
+			<CgMenuRound />
+		</IconContext.Provider>
+	);
+};
+
+const CategoryI = () => {
+	return (
+		<IconlyProvider
+			primaryColor="#fff"
+			size='large'
+			set="two-tone"
+			stroke="bold"
+		>
+		<Category />
+		</IconlyProvider>
+	);
+};
+
 
 const ToolsI = () => {
 	return (
@@ -87,4 +113,4 @@ const MaintenanceI = () => {
 	);
 };
 
-export { ToolsI, NewI, ReplaceI, ProfileI, QuestionI, WarrantyI, MaintenanceI };
+export { CgMenuRoundI, CategoryI, ToolsI, NewI, ReplaceI, ProfileI, QuestionI, WarrantyI, MaintenanceI };

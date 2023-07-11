@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CTA from '../main/cta'
 
 const Footer = (props) => {
   return (
@@ -12,6 +13,7 @@ const Footer = (props) => {
           justifyContent: 'space-between',
         }}
       >
+      <CTA />
         <svg
           viewBox="0 0 950.8571428571428 1024"
           style={{
