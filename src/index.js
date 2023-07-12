@@ -15,7 +15,7 @@ import Replacement from "./Pages/replacement";
 import Warranty from "./Pages/warranty";
 import Nav from './Components/hoc/Nav';
 import Footer from './Components/hoc/footer';
-import Wave from "./SVGs/Wave.js";
+import Wave from "./Components/SVGs/Wave.js";
 
 const App = () => {
   return (

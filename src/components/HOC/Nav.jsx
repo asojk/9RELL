@@ -11,8 +11,7 @@ import {
 } from "@nextui-org/react";
 
 import {
-	CgMenuRoundI,
-  CategoryI,
+	CategoryI,
   ToolsI,
   NewI,
   ReplaceI,
@@ -142,18 +141,17 @@ function Nav() {
           <div className="navbarLeft">
             <Navbar.Content enableCursorHighlight>
               <Dropdown
-                placement="bottom-start"
-                hideArrow
+                placement="bottom-left"
                 animated
-                ripple={false}
+                ripple={true}
               >
                 <Dropdown.Button
-                  icon={<CgMenuRoundI />}
-				  light
+                  icon={<CategoryI />}
+				          light
                   size="xl"
-				  transition="all 0.5s ease"
-				  animated={true}
-				  rounded={true}
+                  transition="all 0.5s ease"
+                  animated={true}
+                  rounded={true}
                   ripple={{ color: "var(--blue)" }}
                 ></Dropdown.Button>
                 <Dropdown.Menu
@@ -172,12 +170,9 @@ function Nav() {
                       icon={<ToolsI />}
                     >
                       <Link to="/repair">
-                        <div className="dropdownItemStyle">
-
-                          Roof Repair
+                        <div className="dropdownItemStyle">Roof Repair
                           <div className="dropdownItemDescription">
-
-                            For leaks, cracks, emergency repairs & more.
+                          For leaks, cracks, emergency repairs & more.
                           </div>
                         </div>
                       </Link>

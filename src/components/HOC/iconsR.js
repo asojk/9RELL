@@ -1,21 +1,16 @@
 import React from "react";
 import { IconContext } from "react-icons";
 
-import { BsTools } from "react-icons/bs";
-import { VscNewFile } from "react-icons/vsc";
-import { VscArrowSwap } from "react-icons/vsc";
-import { CgProfile } from "react-icons/cg";
+import { BsTools, BsShieldCheck, BsBuildingGear } from "react-icons/bs";
+import { VscNewFile, VscArrowSwap } from "react-icons/vsc";
+import { CgProfile, CgMenuRound } from "react-icons/cg";
 import { FaQuestionCircle } from "react-icons/fa";
-import { BsShieldCheck } from "react-icons/bs";
-import { BsBuildingGear } from "react-icons/bs";
 import { IconlyProvider, Category } from "react-iconly";
-import { CgMenuRound } from "react-icons/cg";
 
 const CgMenuRoundI = () => {
 	return (
 		<IconContext.Provider
-			value={{ color: "#fff", className: "iconR", size: "45", cursor: "pointer", margin: "0 0 0 10px",  }}
-		>
+			value={{ color: "#fff", className: "iconR", size: "40", cursor: "pointer" }}>
 			<CgMenuRound />
 		</IconContext.Provider>
 	);
@@ -27,7 +22,7 @@ const CategoryI = () => {
 			primaryColor="#fff"
 			size='large'
 			set="two-tone"
-			stroke="bold"
+			stroke="light"
 		>
 		<Category />
 		</IconlyProvider>

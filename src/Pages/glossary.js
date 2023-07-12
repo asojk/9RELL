@@ -1,13 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Nav from "../Components/hoc/Nav.jsx";
-import Footer from "../Components/hoc/footer.js";
-
 const Glossary = (props) => {
 	return (
 		<div className="page-container">
-			<Nav />
 			<div className="glossary-search">
 				<div className="glossary-heading">
 					<h2 className="glossary-text">{props.heading}</h2>
@@ -162,7 +158,6 @@ const Glossary = (props) => {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

@@ -4,7 +4,7 @@ import "./swiper.css";
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards, Mousewheel } from 'swiper/modules';
-import SlideImage1 from './pics/finishedroof.webp';
+import SlideImage1 from './pics/finishedroof.jpg';
 import SlideImage2 from './pics/repair1.jpg';
 import SlideImage3 from './pics/new-construction.jpg';
 import SlideImage4 from './pics/repair2.jpg';

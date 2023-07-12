@@ -1,11 +1,8 @@
 import React from "react";
-import Nav from "../Components/hoc/Nav.jsx";
-import Footer from "../Components/hoc/footer.js";
 
 const Replacement = (props) => {
 	return (
 		<div className="page-container">
-			<Nav />
 			<div className="replace-replace">
 				<div className="box">
 					<sh></sh>
@@ -79,7 +76,6 @@ const Replacement = (props) => {
 					building.
 				</p>
 			</div>
-			<Footer />
 		</div>
 	);
 };

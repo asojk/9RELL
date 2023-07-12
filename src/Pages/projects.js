@@ -1,6 +1,3 @@
-import Nav from "../Components/hoc/Nav.jsx";
-import Footer from "../Components/hoc/footer.js";
-
 import React, { useEffect } from "react";
 
 const Projects = (props) => {
@@ -18,14 +15,12 @@ const Projects = (props) => {
 
 	return (
 		<div className="page-container">
-			<Nav />
 			<div className="showcase">
 				<div
 					data-showcase-id="bd0fbd6f-4168-45d7-a25c-0bba7e9817e2"
 					id="companycam-showcase-root"
 				></div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

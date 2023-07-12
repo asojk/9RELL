@@ -1,12 +1,8 @@
 import React from "react";
 
-import Nav from "../Components/hoc/Nav.jsx";
-import Footer from "../Components/hoc/footer.js";
-
 const Repair = (props) => {
 	return (
 		<div className="page-container">
-			<Nav />
 			<div className="replace-replace">
 				<div className="replace-heading">
 					<span className="replace-heading">Flat Roof Repair</span>
@@ -79,7 +75,6 @@ const Repair = (props) => {
 					immediate assistance, call today.
 				</p>
 			</div>
-			<Footer />
 		</div>
 	);
 };

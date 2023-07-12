@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Partners from "../Components/partners.js";
-import Expertise from "../Components/expertise.js";
+import Expertise from "../Components/main/expertise.js";
 import Testimonials from "../Components/testi/testimonials.js";
 import Swipe from "../Components/main/swiper.jsx";
 import Badges from "../Components/main/badges.jsx";
