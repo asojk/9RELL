@@ -115,12 +115,13 @@
   width: 100%;
   text-wrap: balance;
   display: flex;
-  max-width: 1200px;
   align-items: center;
   flex-direction: column;
   place-content: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  z-index: 99;
+  padding-bottom: 2rem;
 }
 .head {
   color: var(--yellow);
@@ -146,15 +147,16 @@
 }
 
 .footer1 {
+  position: relative;
   align-items: center;
   color: #fff;
   display: flex;
   gap: 4rem;
-  justify-content: center;
-  padding-bottom: 2rem;
   padding-top: 2rem;
-  position: relative;
-  width: 100%;
+  padding-bottom: 2rem;
+  justify-content: center;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .navbarCenter {
@@ -266,7 +268,6 @@
   .comic-button2 {
     font-size: 1rem;
     border: 1px solid #fff;
-    display: inline-flex;
     box-shadow: -3px 3px 0px;
   }
   .comic-button2:hover {
@@ -796,7 +797,7 @@
 .exp {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding-top: 4rem;
   z-index: 10;
 }
 
@@ -1418,19 +1419,7 @@
 .legal-link:hover,
 .social:hover,
 .footer-link:hover,
-.footer-link01:hover,
-.footer-link02:hover,
-.footer-link03:hover,
-.footer-link04:hover,
-.footer-link05:hover,
-.footer-link06:hover,
-.footer-link07:hover,
-.footer-link08:hover,
-.footer-link09:hover,
-.footer-link10:hover,
-.testimonials-view-more:hover,
-.button:hover,
-.get-started:hover {
+.testimonials-view-more:hover {
   opacity: 0.5;
 }
 
@@ -1559,12 +1548,10 @@
 
 .section-container {
   align-items: center;
-  height: 100vh;
+  position: relative;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  padding: 6rem, 0, 6rem, 0;
-  position: relative;
   width: 100%;
 }
 .section-description {
@@ -1696,13 +1683,10 @@
   display: flex;
   flex: 1 1;
   flex-direction: column;
-  gap: 2rem;
   justify-content: center;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
   position: relative;
 }
 
@@ -1872,7 +1856,7 @@
   }
 
   .testimonials-testimonials {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .testimonials-text {
@@ -1897,7 +1881,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 13vh;
+    padding-top: 18vh;
   }
   .bbb {
     max-width: 6rem;
@@ -1941,17 +1925,6 @@
   .main-main {
     flex: 1 1;
   }
-  .page-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 6rem;
-    width: 100%;
-    z-index: 999;
-  }
   .partners-card {
     padding: 1rem;
   }
@@ -1960,13 +1933,6 @@
     height: 300px;
     max-width: 600px;
     min-width: 150px;
-  }
-  .section-container {
-    padding: 0, 2rem, 0, 2rem;
-  }
-  .testimonials-testimonials {
-    padding-bottom: 4rem;
-    padding-top: 4rem;
   }
 }
 
@@ -2105,7 +2071,7 @@
 
 @media (max-width: 479px) {
   .home-container {
-    padding-top: 12vh;
+    padding-top: 18vh;
   }
   .comic-button {
     font-size: 0.75rem;

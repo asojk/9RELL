@@ -13,15 +13,15 @@ import Projects from "./Pages/projects";
 import Repair from "./Pages/repair";
 import Replacement from "./Pages/replacement";
 import Warranty from "./Pages/warranty";
-import Nav from './Components/hoc/Nav';
+import Nav from './Components/hoc/Nav.jsx';
 import Footer from './Components/hoc/footer';
 import Wave from "./Components/SVGs/Wave.js";
 
 const App = () => {
   return (
     <Router>
-    <div style={{ zIndex: "9999" }}>
-    <Nav /></div> 
+    <div className="all-wrapper" style={{ }}>
+    <Nav />
     <Wave />
     <Routes>
       <Route path="/" element={<Home />} />
@@ -35,7 +35,6 @@ const App = () => {
       <Route path="/warranty" element={<Warranty />} />
       <Route path="/maintenance" element={<Maintenance />} />
     </Routes>
-    <div style={{ zIndex: "9999" }}>
     <Footer />
     </div>
   </Router>

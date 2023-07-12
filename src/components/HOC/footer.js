@@ -5,7 +5,7 @@ import CTA from '../main/cta'
 const Footer = (props) => {
   return (
     <footer1 className="footer1">
-      <div
+      <div className="footer2"
         style={{
           display: 'flex',
           alignItems: 'center',

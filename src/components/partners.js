@@ -3,12 +3,10 @@ import React from "react";
 const Partners = () => {
 	return (
 		<div className="partners-partners">
-			<header className="partners-header">
-				<span className="partners-head">Current & Former Clients</span>
-				<h2 className="partners-heading partners-heading">
-					We work with the best
-				</h2>
-			</header>
+        <header className="header">
+            <span className="head">We work with the best</span>
+            <h2 className="heading">Current & Former Clients</h2>
+        </header>
 			<main className="partners-cards">
 				<div className="partners-card">
 					<img
