@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 2rem;
   padding-left: 10vw;
 }
 
@@ -10,31 +9,22 @@
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 4.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
     width: 30vw;
-    height: 4rem;
-    margin-bottom: 1rem;
   }
-  
-  .1-span {
-    font-size: 3rem;
-  }
-  
-  .message {
+  .messages {
     background-color: #ff3333;
     color: #fff;
-    display: block;
+    display: inline-block;
     font-weight: 900;
     overflow: hidden;
     position: absolute;
-    margin-left: 2rem;
-    top: .2rem;
-    left: 4rem;
+    margin-left: 1rem;
     animation: openclose 10s ease-in-out infinite;
   }
 
@@ -51,12 +41,6 @@
     width: 30vw;
     height: 4rem;
   }
-  
-  .2-span {
-    font-size: 3rem;
-    margin-left: .25rem;
-  }
-  
   .word1, .word2, .word3, .word4, .word5 {
     font-family: "Poppins", sans-serif;
     margin-left: 1rem;
@@ -64,7 +48,7 @@
   
   @keyframes openclose {
     0% {
-      top: 0.2rem;
+      top: .2rem;
       width: 0;
     }
     5% {
@@ -74,15 +58,15 @@
       width: 230px;
     }
     30% {
-      top: 0.2rem;
+      top: .2rem;
       width: 230px;
     }
     33% {
-      top: 0.2rem;
+      top: .2rem;
       width: 0;
     }
     35% {
-      top: 0.2rem;
+      top: .2rem;
       width: 0;
     }
     38% {
@@ -128,19 +112,42 @@
   }
 
   @media (max-width: 991px) {
-    .anim-1 { font-size: 2rem; height: 3rem;
+    .anim-head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: .25rem;
+      height: 30vh;
     }
-    .message {
-      margin-left: .5rem;
-      top: .05rem;
+    .anim-1 {
+      font-size: 2rem;
+      line-height: 4.5rem;
+      width: 50vw;
+      font-weight: 800;
+    }
+    .messages {
+      margin-left: 1rem;
       left: 3rem;
       font-weight: 700;
+      font-size: 2rem;
+      line-height: 4.5rem;
+      clip-path: polygon(5% 0, 100% 0, 85% 100%, 0 100%);
     }
-    .anim-2 { font-size: 2rem; height: 3rem;
+    .anim-2 { 
+      font-size: 2rem; 
+      height: 3rem;
+      font-weight: 800;
+      width: 60vw;
     }
   }
 
-  @media (max-width: 767px) {
-    .anim-1, .anim-2 { display: none;
+  @media (max-width: 599px) {
+    .anim-1 {
+      width: 60vw;
+    }
+    .anim-2 { 
+      width: 80vw;
+      font-size: 1.5rem;
+      font-weight: 800;
     }
   }

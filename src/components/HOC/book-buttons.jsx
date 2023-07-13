@@ -1,63 +1,9 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import PropTypes from 'prop-types';
-import bookButtons from './book-buttons';
+import React from 'react';
 
-const Contact = ({
-  heading,
-  textinputPlaceholder,
-  textinputPlaceholder1,
-  textinputPlaceholder2,
-  textinputPlaceholder3,
-  textinputPlaceholder4,
-  BuildingType,
-  Application,
-}) => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_caqlar9',
-        'template_7a6btu8',
-        form.current,
-        'KfKbChHKxtJr4p331'
-      )
-      .then(
-        (result) => {
-          console.log('Form submitted successfully:', result.data);
-          // Clear the input fields after a successful submission
-          setName('');
-          setEmail('');
-          setPhone('');
-          setDate('');
-          setNotes('');
-          setBuildingType('Commercial');
-          setApplication('New Construction');
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [date, setDate] = useState('');
-  const [notes, setNotes] = useState('');
-  const [buildingType, setBuildingType] = useState('NA');
-  const [application, setApplication] = useState('NA');
-
-  return (
-    <div className="contact-container">
-      <h2 className="head">{heading}</h2>
-      <span className="subhead">or</span>
-      <div className="grid grid-cols-2 grid-rows-1 gap-12" style={{zIndex: "99"}}>
+const bookButtons = () => (
+  <div className="grid grid-cols-2 grid-rows-1 gap-12" style={{zIndex: "99"}}>
     <div >
-    <a className="comic-button3" href="tel:+18002089693">
+    <a className="comic-button" href="tel:+18002089693">
     <svg
       className="phone"
       xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +17,7 @@ const Contact = ({
   </a>
     </div>
     <div >
-    <a className="comic-button4" href="tel:+18002089693">
+    <a className="comic-button2" href="tel:+18002089693">
     <svg
       className="phone"
       xmlns="http://www.w3.org/2000/svg"
@@ -85,124 +31,7 @@ const Contact = ({
   </a>
     </div>
 </div>
-      <div className="book-book">
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            required
-            placeholder={textinputPlaceholder}
-            autoComplete="name"
-            className="input book-input"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="email"
-            required
-            placeholder={textinputPlaceholder1}
-            autoComplete="email"
-            className="input book-input"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="tel"
-            required
-            placeholder={textinputPlaceholder2}
-            autoComplete="tel"
-            className="input book-input"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          <input
-            type="date"
-            placeholder={textinputPlaceholder4}
-            className="input book-input"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder={textinputPlaceholder3}
-            className="input book-input"
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-          />
-          <div className="selections">
-            <div className="select-container1">
-              <label htmlFor="building_type">{buildingType}</label>
-              <select
-                id="building_type"
-                required
-                className="custom-select1"
-                value={BuildingType}
-                onChange={(e) => setBuildingType(e.target.value)}
-              >
-                <option value="NA">Select</option>
-                <option value="Commercial">Commercial</option>
-                <option value="Industrial">Industrial</option>
-                <option value="Medical">Medical</option>
-                <option value="School">School</option>
-                <option value="Office">Office</option>
-                <option value="Retail">Retail</option>
-                <option value="Residential">Residential</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div className="select-container2">
-              <label htmlFor="repair">{Application}</label>
-              <select
-                id="repair"
-                required
-                className="custom-select2"
-                value={application}
-                onChange={(e) => setApplication(e.target.value)}
-              >
-                <option value="NA">Select</option>
-                <option value="New Construction">New Construction</option>
-                <option value="Repair">Repair</option>
-                <option value="Retrofit (Current is Metal)">
-                  Retrofit (Current is Metal)
-                </option>
-                <option value="Retrofit (Current is Rubber or Tar)">
-                  Retrofit (Current is Rubber or Tar)
-                </option>
-                <option value="Insulation (Energy Efficient)">
-                  Insulation (Energy Efficient)
-                </option>
-                <option value="PVC Duro-Last">PVC Duro-Last</option>
-                <option value="EDPM Rubber Roofing">EDPM Rubber Roofing</option>
-                <option value="Other">Other</option>
-                <option value="I'm Not Sure">Not Sure</option>
-              </select>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
+  
+);
 
-Contact.defaultProps = {
-  heading: 'Book an Appointment',
-  textinputPlaceholder: 'Name',
-  textinputPlaceholder1: 'Email',
-  textinputPlaceholder2: 'Phone',
-  textinputPlaceholder3: 'Notes',
-  textinputPlaceholder4: 'Date',
-  BuildingType: 'Building Type',
-  Application: 'Application',
-};
-
-Contact.propTypes = {
-  heading: PropTypes.string,
-  textinputPlaceholder: PropTypes.string,
-  textinputPlaceholder1: PropTypes.string,
-  textinputPlaceholder2: PropTypes.string,
-  textinputPlaceholder3: PropTypes.string,
-  textinputPlaceholder4: PropTypes.string,
-  BuildingType: PropTypes.string,
-  Application: PropTypes.string,
-};
-
-export default Contact;
+export default bookButtons;

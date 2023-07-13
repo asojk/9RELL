@@ -109,7 +109,7 @@
 }
 @media (max-width: 767px) {
   .swiper {
-    width: 70vw;
+    width: 100vw;
     height: 30vh;
   }
   .slide-text {

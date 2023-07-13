@@ -1,10 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const NewRoof = (props) => {
-	return (
-		<div className="page-container">
-		</div>
-	);
-};
+const NewRoof = () => <div className="page-container" />;
 
 export default NewRoof;
