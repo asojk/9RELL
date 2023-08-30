@@ -1,0 +1,51 @@
+.exp {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.exp-card {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.exp-card:hover .exp-description {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.exp-cards {
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+}
+
+.exp-container1 {
+  max-width: 100%;
+}
+
+.exp-description {
+  bottom: 0;
+  color: var(--white);
+  left: 0;
+  padding: 0.25rem;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.exp-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: relative;
+}

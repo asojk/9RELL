@@ -1,0 +1,26 @@
+  /* KEYFRAMES */
+@keyframes grow-x{0%{transform:scaleX(0)}to{transform:scaleX(1)}} @keyframes shrink-x{0%{transform:scaleX(1)}to{transform:scaleX(0)}} @-webkit-keyframes slide{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(-2700px,0,0);transform:translate3d(-2700px,0,0)}} @keyframes slide{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(-2700px,0,0);transform:translate3d(-2700px,0,0)}} @-webkit-keyframes swiper-preloader-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}} @keyframes swiper-preloader-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}} @-webkit-keyframes swinging{0%,to{background-position:25%0}50%{background-position:76% 100%}} @keyframes swinging{0%,to{background-position:25%0}50%{background-position:76% 100%}}::view-transition-new(figure-caption),::view-transition-old(figure-caption){height:auto;right:0;left:auto;transform-origin:right center}::view-transition-old(figure-caption){animation:.25s linear both shrink-x}::view-transition-new(figure-caption){animation:.25s .25s linear both grow-x}
+@-webkit-keyframes video-fade {
+  0% {-webkit-filter: grayscale(0%); filter: grayscale(0%);}
+  to {-webkit-filter: grayscale(100%); filter: grayscale(100%);}}
+@keyframes video-fade {
+  0% {filter: grayscale(0%);}
+  to {filter: grayscale(100%);}}
+  
+  @keyframes fade-in{
+    entry 0%  {
+      opacity: 0; transform: translateY(100%);
+    }
+    entry 100%  {
+      opacity: 1; transform: translateY(0);
+    }
+  }
+  @keyframes fade-out{
+    exit 0% {
+      opacity: 1; transform: translateY(0);
+    }
+    exit 100% {
+      opacity: 0; transform: translateY(-100%);
+    }
+  }
+  

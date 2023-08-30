@@ -1,0 +1,190 @@
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import ContactButtons from "./ContactButtons";
+import {
+  FiShoppingCart,
+  FiSearch,
+  FiPhone,
+  FiMenu,
+  FiHome,
+  FiX,
+} from "react-icons/fi";
+import {Link} from 'react-router-dom';
+import {ActivityIcon, CategoryI, CgMenuRoundI, FlashIcon, MaintenanceI, NewI, QuestionI, ReplaceI, ToolsI, UserIcon, WarrantyI} from '../hoc/iconsR';
+
+const FloatingBottomNav = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+
+      <motion.nav
+        animate={open ? "open" : "closed"}
+        initial="closed"
+        className="fixed w-full flex px-[10vw] items-center text-black justify-between top-8 left-[50%] -translate-x-[50%] z-50">
+          <MenuButton setOpen={setOpen} open={open} />
+            <div className="z-10 flex items-center w-screen py-4">
+
+              <div className="relative w-1/3">
+              <Links Icon={FiHome} />
+              </div>
+
+              <div className='items-center w-1/3 text-center bg-transparent place-content-center'>
+                  <img className='z-50 w-2/2 md:w-4/4 lg:w-5/6 xl:w-5/8' src='https://grell.s3.us-east-2.amazonaws.com/grell/W-Tag.svg' alt='Logo' />
+              </div>
+
+              <div className='w-1/3'>
+                <ContactButtons />
+              </div>
+            </div>
+            
+          <Menu />
+      </motion.nav>
+
+  );
+};
+
+const Links = ({ text, Icon }) => {
+  return (
+    <a
+      href="#"
+      rel="nofollow"
+      className="flex flex-col items-center w-12 gap-1 text-3xl transition-colors text-l1 hover:text-r"
+    >
+      <Icon />
+      <span className="text-xs">{text}</span>
+    </a>
+  );
+};
+
+const MenuButton = ({ open, setOpen }) => {
+  return (
+    <div
+      onClick={() => setOpen((pv) => !pv)}
+      className="h-full text-4xl font-bold text-l1"
+    >
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="p-2"
+      >
+        <AnimatePresence mode="wait">
+          {open ? (
+            <motion.span
+              key="icon-1"
+              className="block"
+              variants={iconVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ duration: 0.125, ease: "linear" }}
+            >
+              <FiX />
+            </motion.span>
+          ) : (
+            <motion.span
+              key="icon-2"
+              className="block"
+              variants={iconVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ duration: 0.125, ease: "linear" }}
+            >
+              <FiMenu />
+            </motion.span>
+          )}
+        </AnimatePresence>
+      </motion.button>
+    </div>
+  );
+};
+
+const Menu = () => {
+  return (
+    <motion.div
+      variants={menuVariants}
+      style={{ transformOrigin: "top", x: "-50%" }}
+      className="p-8 shadow-lg bg-d6 text-l1 absolute top-[125%] left-[50%] flex w-[calc(100vw_-_48px)] max-w-lg rounded-xl"
+    >
+      <div className="flex flex-col w-1/3 gap-2">
+      <SectionTitle text="Services" />
+        <Link to='/repair' text='Repair' icon={<ToolsI />} />
+        <Link to='/replacement' text='Replace' icon={<ReplaceI />} />
+        <Link to='/new-roof' text='Building New' icon={<NewI />} />
+        <Link to='/maintenance' text='Maintenance' icon={<MaintenanceI />} />
+      </div>
+      <div className="flex flex-col w-1/3 gap-2">
+        <SectionTitle text="More Info" />
+          <Link to='/warranty' text='Warranty' icon={<WarrantyI />} />
+          <Link to='/products' text='Products' icon={<CgMenuRoundI />} />
+          <Link to='/faq' text='FAQ' icon={<QuestionI />} />
+      </div>
+      <div className="flex flex-col w-1/3 gap-2">
+        <SectionTitle text="About" />
+          <Link to='/about' text='About' icon={<UserIcon />} />
+          <Link to='/projects' text='Projects' icon={<FlashIcon />} />
+          <Link to='/press' text='Press' icon={<ActivityIcon />} />
+      </div>
+    </motion.div>
+  );
+};
+
+const SectionTitle = ({ text }) => {
+  return (
+    <motion.h4
+      variants={menuLinkVariants}
+      className="mb-2 text-sm font-black"
+    >
+      {text}
+    </motion.h4>
+  );
+};
+
+const MenuLink = ({ text }) => {
+  return (
+    <motion.a
+      variants={menuLinkVariants}
+      href="#"
+      rel="nofollow"
+      className="flex items-center gap-2 text-lg transition-colors hover:text-r"
+    >
+      {text}
+    </motion.a>
+  );
+};
+
+export default FloatingBottomNav;
+
+const iconVariants = {
+  initial: { rotate: 180, opacity: 0 },
+  animate: { rotate: 0, opacity: 1 },
+  exit: { rotate: -180, opacity: 0 },
+};
+
+const menuVariants = {
+  open: {
+    scale: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.05,
+    },
+  },
+  closed: {
+    scale: 0,
+    transition: {
+      when: "afterChildren",
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+const menuLinkVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+  },
+  closed: {
+    y: -15,
+    opacity: 0,
+  },
+};

@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './Styles/colors.css';
+@import './Styles/keyframes.css';
+@import './Styles/typography.css';
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@layer base {
+  html {
+    font-family: Poppins, system-ui, sans-serif;
+  }
+}
+
+.shadow-blue {
+  box-shadow: rgba(7, 65, 210, 0.1) 0px 9px 30px
+  }
+  .shadow-purp {
+    box-shadow: 5px 5px 0px 0px rgba(109,40,217);
+  }
+  .shadow-faintblue {
+    box-shadow: 0 25px 50px -12px #3b82f620; 
+  }
+  .shadow-nimble {
+    box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+  }
+  .shadow-aesthetic {
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  }
+
+  .shadow-edge {
+    box-shadow: 0 0 0 2px var(--w4), 8px 8px 0 0 var(--w4);
+    }
+
+.read-more { display: none; }
+p:truncated + .read-more { display: block; }
+
+
+.base-page-size {
+  width: 100%;
+  min-height: 100vh;
+}
+    
+.bg-vid {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  -webkit-animation: video-fade 6s ease-in both;
+  animation: video-fade 6s ease-in both;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  color: var(--l1);
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+  top: 90%;
+  margin-top: 1.25rem;
+  background: var(--d9);
+  background-opacity: 0.9;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.backdrop {
+  backdrop-filter: blur(.5rem);
+}
+
+
+.select-container1 Label,
+.select-container2 Label {
+  color: hsla(0, 0%, 100%, 0.616);
+  font: 300 1rem "Poppins", sans-serif;
+  justify-items: flex-start;
+  justify-self: flex-start;
+}
+
+.select-container1,
+.select-container2 {
+  flex-direction: column;
+}
+
+.select-container1,
+.select-container2,
+.selections {
+  align-items: left;
+  display: flex;
+  justify-content: left;
+}
+
+.selections {
+  flex-direction: row;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 1.25rem;
+  width: 100%;
+}
+
+.custom-select1,
+.custom-select2 {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: initial;
+  border: 1px outset var(--r);
+  border-radius: 0.5rem;
+  color: var(--l1);
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 6rem;
+}

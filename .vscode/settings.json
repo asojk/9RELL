@@ -1,2 +1,45 @@
 {
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.autoClosingBrackets": "never",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnSaveMode": "file",
+  "vs-code-prettier-eslint.prettierLast": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSaveMode": "file"
+  },
+  "files.exclude": {
+    ".DS_Store": true,
+    ".favorites.json": true,
+    ".git": true,
+    ".gitignore": true,
+    "README.md": true,
+    "target": true,
+    "docs/notes": true,
+    "docs": true,
+    ".history": true,
+    "p107": true,
+    ".vscode": true,
+    "settings.json": true,
+    "node_modules": true,
+    "build": true
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "xlink"
+  ],
+  "favorites.sortDirection": "DESC",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
